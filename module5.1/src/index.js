@@ -1,13 +1,18 @@
 let num = prompt('Введите значение: ');
 
 num =+ num;
+let flag = false;
 
-if(num % 2 === 0) {
-    console.log('Число четное')
-} else if (num = "NaN") {
-    console.log('Not-a-number')
-} else if (typeof(num) !== 'number') {
-    console.log('Упс, кажется, вы ошиблись')
-} else {
-    console.log('Число нечетное')
+
+if ((typeof num === 'number') && (num !== NaN)) {
+    flag = true
+    if ((flag = true) && ((num % 2) === 0)) {
+        console.log('Число четное')
+    } else if ((flag === true) && ((num % 2 - 1) === 0)) {
+        console.log('Число нечетное')
+    } else if (flag) {
+        console.log('Упс, кажется, вы ошиблись')
+    }
 }
+
+
